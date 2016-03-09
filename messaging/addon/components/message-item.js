@@ -1,6 +1,8 @@
 import Ember from 'ember';
+import layout from 'messaging/templates/components/message-item';
 
 export default Ember.Component.extend({
+  layout,
   time: Ember.inject.service(),
   tagName: 'li',
   classNames: [

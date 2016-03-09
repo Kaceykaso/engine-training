@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import MessagingData from 'mobile-app/data/messaging';
+import MessagingData from 'messaging/data/messaging';
 
 export default Ember.Route.extend({
   model(params) {
