@@ -3,5 +3,14 @@ import Resolver from 'ember-engines/resolver';
 
 export default Engine.extend({
   modulePrefix: 'messaging',
-  Resolver
+  Resolver,
+
+  dependencies: {
+    externalRoutes: [
+      'index'
+    ],
+    services: [
+      'time'
+    ]
+  }
 });
