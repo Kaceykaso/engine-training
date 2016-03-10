@@ -19,7 +19,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "messaging": "*"
+    "messaging": "*",
+    "ember-engines": "trentmwillis/ember-engines#links"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",

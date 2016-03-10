@@ -6,9 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('messaging', function() {
-    this.route('thread', { path: '/thread/:id' });
-  });
+  this.mount('messaging');
 });
 
 export default Router;
