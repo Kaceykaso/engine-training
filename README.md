@@ -129,7 +129,7 @@ mv app/components addon/components
 mv app/templates addon/templates
 ```
 
-Since we've now introduce new folders, you might need to kill and restart your server again. Once you do, you should get an error similar to:
+Since we've now introduced new folders, you might need to kill and restart your server again. Once you do, you should get an error similar to:
 
 ```bash
 Addon templates were detected, but there are no template compilers registered for `messaging`. Please make sure your template precompiler (commonly `ember-cli-htmlbars`) is listed in `dependencies` (NOT `devDependencies`) in `messaging`'s `package.json`.
@@ -146,7 +146,7 @@ This error is pretty explicit, since your addon now has templates in the addon d
 
 Start the server again and you should build successfully!
 
-But, notice, the `search-bar` doesn't show up! This is becase we're running the `mobile-app` application, which means that when it tries to use that component it is looking for `mobile-app/components/search-bar`, but out component is now living at `messaging/components/search-bar`! So how do we resolve this?
+But, notice, the `search-bar` doesn't show up! This is because we're running the `mobile-app` application, which means that when it tries to use that component it is looking for `mobile-app/components/search-bar`, but our component is now living at `messaging/components/search-bar`! So how do we resolve this?
 
 The simple solution is to re-export the component from the `app` directory of our addon. So add the following:
 
