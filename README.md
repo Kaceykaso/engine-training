@@ -273,7 +273,7 @@ Do the above for all the route templates and then you should have the applicatio
 To start working with engines we need to install the [ember-engines](git@github.com:dgeb/ember-engines.git) addon in both the application and the addon. Normally, this is as simple as running:
 
 ```bash
-ember install ember-enginers
+ember install ember-engines
 ```
 
 However, there is still one big feature that hasn't made its way into `ember-engines` quite yet: external linking (more on that later). So, for the time being we will install `ember-engines` from a branch.
